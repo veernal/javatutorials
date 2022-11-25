@@ -1,0 +1,39 @@
+<h3>Purchase Book</h3>
+<div class="container">
+<form [formGroup]="purchaseForm">
+
+
+    Enter your Name: <input 
+                     #name
+                     formControlName="name"
+                     type="text"
+                     placeholder="Enter Name" />
+                     <br/>
+    
+    Enter your Email ID: <input 
+                          #emailId
+                          formControlName="emailId"
+                          type="text"
+                          placeholder="Enter Email" />
+                          <br/>
+    
+    <input 
+        type="button"
+        value="Subscribe Book"
+        (click)="buyBook(name.value,emailId.value)"
+        [disabled]="purchaseForm.invalid" />
+    
+</form>
+
+
+<br/>
+
+<h4 *ngIf="invoiceGenerated">Payment Invoice Generated !</h4>
+
+<br/>
+<input 
+*ngIf="invoiceGenerated"
+type="button"
+value="View Invoice"
+(click)="viewInvoice(paymentInvoiceHtml)"/>
+</div>

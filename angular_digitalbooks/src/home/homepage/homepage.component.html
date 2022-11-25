@@ -1,0 +1,16 @@
+<h2>Welcome to the Digital Books App</h2>
+
+<div class="card text-center">
+    <div class="bg-image hover-overlay">
+      <img src="https://th.bing.com/th/id/R.7318a37277d2ab81b7535ab7b5442664?rik=XvUD5OsLoIpVLw&riu=http%3a%2f%2fsonorannews.com%2fwp-content%2fuploads%2f2016%2f09%2fbooks-wamsler-123RF.jpg&ehk=MCQxfbd7lmu7pyhVKXmCVpsNzo5SVA995XnwRg9ieMk%3d&risl=&pid=ImgRaw&r=0" style="width: 800px;height: 200px;" class="image-fluid"/>
+      <a href="#!">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title" *ngIf="!isAuthorLoggedIn()">You are a Reader</h5>
+      <h5 class="card-title" *ngIf="isAuthorLoggedIn()">Hi {{getUsername()}} !</h5>
+      <p class="card-text" *ngIf="!isAuthorLoggedIn()">Browse and Subscribe to our exquisite collection of books and Go on a reading spree !</p>
+      <p class="card-text" *ngIf="isAuthorLoggedIn()">Share your knowledge, views, ideas and dreams with the world. Create a New Book Now !</p>
+    </div>
+  </div>

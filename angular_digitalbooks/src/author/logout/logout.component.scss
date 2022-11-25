@@ -1,0 +1,24 @@
+input[type=button] {
+    background-color: #0446aa;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+
+input[type=button]:hover{
+    background-color: skyblue;
+    color: whitesmoke;
+}
+
+h3{
+    color:blueviolet;
+    text-align: center;
+}
+
+h4{
+    color:rgb(120, 105, 255)
+}
