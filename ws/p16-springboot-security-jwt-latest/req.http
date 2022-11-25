@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/home
+###
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "gopi",
+    "password": "gopi@123"
+}
+
+###
+# Restricted endpoints
+###
+
+# director
+GET http://localhost:8080/api/movies
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0xMS0wOFQxMToxMDo0Mi4yNzk1Njc5NDciLCJzdWIiOiJnb3BpIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY3ODg2MzQyLCJpYXQiOjE2Njc4ODYwNDJ9.68hr8p538eSck1oJiQTehE4CWE6u_ysAo8tfjIkQUStxQspohpPD5FaXetllrH1B5_B4rRSRtmQxCE2Wp8Ru-Q
+###
+
+
+# admin
+GET http://localhost:8080/api/directors
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0xMS0wOFQxMToxMDo0Mi4yNzk1Njc5NDciLCJzdWIiOiJnb3BpIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY3ODg2MzQyLCJpYXQiOjE2Njc4ODYwNDJ9.68hr8p538eSck1oJiQTehE4CWE6u_ysAo8tfjIkQUStxQspohpPD5FaXetllrH1B5_B4rRSRtmQxCE2Wp8Ru-Q
+
+###
+
+# gopi -> director
+# eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0xMS0wOFQxMToxMDo0Mi4yNzk1Njc5NDciLCJzdWIiOiJnb3BpIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY3ODg2MzQyLCJpYXQiOjE2Njc4ODYwNDJ9.68hr8p538eSck1oJiQTehE4CWE6u_ysAo8tfjIkQUStxQspohpPD5FaXetllrH1B5_B4rRSRtmQxCE2Wp8Ru-Q
+
+# praveen -> admin
+# eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0xMS0wOFQxMTowOTowMi44NDM2MDM1NjMiLCJzdWIiOiJwcmF2ZWVuIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY3ODg2MjQyLCJpYXQiOjE2Njc4ODU5NDJ9.4GLJdAQF_0d30icLJEGizDd7e6mi6x09B195vH_DyBB_AQzuitL_lkLF-f3II5lvC8Atq82GEHoKDLaRTjtjdw

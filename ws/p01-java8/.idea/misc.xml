@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../p02-junit-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../p03-springboot-testing/pom.xml" />
+        <option value="$PROJECT_DIR$/../p07-springboot-rest-h2/pom.xml" />
+        <option value="$PROJECT_DIR$/../p08-springboot-rest-mysql-incomplete/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservices/p17-api-gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservices/p17-book-our-show-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservices/p17-movies-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../p16-springboot-security-jwt-latest/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="p01-java8" />
+        <module name="p02-junit-demo" />
+        <module name="p03-springboot-testing" />
+        <module name="p07-springboot-rest-h2" />
+        <module name="p08-springboot-rest-mysql-incomplete" />
+        <module name="p16-springboot-security-jwt-latest" />
+        <module name="p17-api-gateway-service" />
+        <module name="p17-book-our-show-service" />
+        <module name="p17-movies-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="p02-junit-demo" options="-parameters" />
+      <module name="p03-springboot-testing" options="-parameters" />
+      <module name="p07-springboot-rest-h2" options="-parameters" />
+      <module name="p08-springboot-rest-mysql-incomplete" options="-parameters" />
+      <module name="p16-springboot-security-jwt-latest" options="-parameters" />
+      <module name="p17-api-gateway-service" options="-parameters" />
+      <module name="p17-book-our-show-service" options="-parameters" />
+      <module name="p17-movies-service" options="-parameters" />
+    </option>
+  </component>
+</project>

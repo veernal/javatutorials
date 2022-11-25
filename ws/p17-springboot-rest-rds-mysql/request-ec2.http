@@ -1,0 +1,23 @@
+GET http://3.84.236.113:8080/api/movies
+
+###
+GET http://3.84.236.113:8080/api/movies/1
+
+###
+
+POST http://3.84.236.113:8080/api/movies
+content-type: application/json
+
+{
+    "title": "Antman is not ant",
+    "director": "Mike",
+    "release": "2021-07-21",
+    "rating": 4.3
+  }
+
+###
+DELETE http://3.84.236.113:8080/api/movies/2
+
+###
+
+GET http://3.84.236.113:8080/api/movies/rating?value=3.9

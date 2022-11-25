@@ -1,0 +1,13 @@
+GET http://localhost:9091/shows/dummy
+
+###
+
+GET http://localhost:9090/shows/dummy
+
+###
+
+GET http://localhost:9090/shows/movies
+
+
+###
+GET http://localhost:9092/api/movies

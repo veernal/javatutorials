@@ -1,0 +1,23 @@
+GET http://localhost:8080/greet/Mike
+###
+
+GET http://localhost:8080/home
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJkYXRlIjoiMjAyMi0xMS0wOFQxMDo0MDozMC4xNDM2Mjc4ODkiLCJzdWIiOiJkZW1vIiwicm9sZSI6InVzZXIiLCJtZXNzYWdlIjoic29tZSBvdGhlciBtZXNzYWdlIiwiZXhwIjoxNjY3OTAyMjMwLCJpYXQiOjE2Njc4ODQyMzB9.4srrWvmiIbbqTfeHaiud1YZj09spiLMvCwzzXW1W7TodhUiyxj-97uqRs6ilUBOiwlbUwZO-2xoLIeA8G0ZW9w
+###
+
+
+
+GET http://localhost:8080/greet
+###
+POST http://localhost:8080/authenticate
+content-type: application/json
+
+{
+    "username": "demo",
+    "password": "demo@123"
+}
+###
+
+
+
+
