@@ -1,0 +1,6 @@
+Use service for httpClient
+Create a single page application with below pages:
+	Create movie
+		use input boxes to get user input
+	Find movie by id
+		Use input box to get id and send request to find movie by id and show details on page when button is clicked

@@ -1,0 +1,19 @@
+div{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+div>a{
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    margin: 0 5px;
+    padding: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div>a:hover{
+    background-color: white;
+    color: black;
+}

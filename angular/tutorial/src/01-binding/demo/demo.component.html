@@ -1,0 +1,13 @@
+<div>
+    My name is <mark>{{name}}</mark>
+    <br/>
+    <input 
+        type="text" 
+        [value]="name" 
+        #myele
+        (change)="updateName(myele.value)"
+        />
+
+        <button (click)="updateName(myele.value)">UpdateName</button>
+
+</div>

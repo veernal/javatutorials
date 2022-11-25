@@ -1,0 +1,13 @@
+<h3>Login Page</h3>
+
+<form>
+    Username: <input type="text" #ele/><br/>
+    Password: <input type="text"><br/>
+    <!-- <button (click)="getLogin()">Login</button>
+    <input type="submit" value="Login" (click)="getLogin()"/> -->
+
+    <!-- <button type="button" (click)="getLogin()">Login</button> -->
+    <input type="button" value="Login" (click)="getLogin(ele.value)"/>
+
+
+</form>

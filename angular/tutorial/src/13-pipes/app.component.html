@@ -1,0 +1,16 @@
+<h2>Pipes Demo</h2>
+
+<ul>
+    <li>Today: {{today}}</li>
+    <li>Today2: {{today2}}</li>
+    <li>Today|date: {{today|date}}</li>
+    <li>Today2|date: {{today2|date:"dd-MM-yyyy, hh:mm:ss"}}</li>
+    <li>movies: {{movies|json}}</li>
+    <li>++++++++++++</li>
+    <li>Subject: {{subject}}</li>
+    <li>Subject|slice: {{subject|slice:1:3}}</li>
+    <li>Subject|upper: {{subject|uppercase}}</li>
+    <li>Subject|lower: {{subject|lowercase}}</li>
+    <li>++++++++++++</li>
+    <li>Subject|capitalize: {{subject|capitalize}}</li>
+</ul>

@@ -1,0 +1,15 @@
+a{
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+    background-color: darkgreen;
+    color: white;
+    margin: 0 5px;
+    padding: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    background-color: white;
+    color: darkgreen;
+}

@@ -1,0 +1,34 @@
+<div>
+    <button (click)="findMovies()">Fetch</button>
+    <button (click)="emptyMoviesList()">Empty</button>
+    <p *ngIf="movies.length==0">We don't have any movie to show</p>
+
+    <table *ngIf="!(movies.length==0)" border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Director</th>
+                <th>Release</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+
+        <!--
+            int i = 0; 
+            for(Movie movie:movies){
+            
+        i++;} -->
+
+        <tbody>
+            <tr *ngFor="let movie of movies;let i=index">
+                <!-- <td>{{movie.id}}</td> -->
+                <td>{{i+1}}</td>
+                <td>{{movie.title}}</td>
+                <td>{{movie.director}}</td>
+                <td>{{movie.release}}</td>
+                <td>{{movie.rating}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

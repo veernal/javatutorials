@@ -1,0 +1,43 @@
+Angular 
+	typescript => js
+	compiler -> need
+	builder -> webpack, gulp, grunt
+
+Can we install JVM ??
+	NO,
+	we can install either jre or jdk.
+	
+	
+	
+	ng -> create project
+	
+	Never use powershell terminal in windows machine
+		
+		
+	Install npm
+		download and install nodejs - https://nodejs.org/en/download/
+			$ node -v  // 14+
+			$ npm -v
+			
+			update npm
+				$ sudo npm install -g npm
+
+	Install @angular/cli
+		$ sudo npm i @angular/cli -g
+		$ ng version 
+	Create angular project
+		$ ng new myapp
+		
+	Install all required dependencies
+		$ npm i
+		
+	Start angular app
+		$ npm run start
+		$ ng serve
+		
+		changed index.html
+		
+		http://localhost:4200/
+		
+
+	

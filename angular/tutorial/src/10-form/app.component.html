@@ -1,0 +1,13 @@
+<h2>Login Page</h2>
+
+<!-- Username dirty: {{loginForm['controls']['username']['dirty']}} -->
+<!-- Username errors: {{loginForm['controls']['username']['errors']}} -->
+
+<form [formGroup]="loginForm">
+    <div>
+        Username: <input type="text" formControlName="username" /><br/>
+        <span class="error" *ngIf="loginForm['controls']['username']['dirty'] && !!loginForm['controls']['username']['errors']">Username is either empty or invalid</span>
+    </div>
+    Password: <input type="text" formControlName="password" /><br/>
+    <input type="button" value="Login" (click)="getLogin()" [disabled]="loginForm.invalid" />
+</form>
