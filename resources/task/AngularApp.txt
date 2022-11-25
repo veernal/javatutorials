@@ -1,0 +1,18 @@
+SPA
+	AppModule
+		HomeComponent
+		AboutComponent
+		HeaderComponent
+		
+		
+		LazyLoad
+		
+		MovieModule -> if users is logged in
+			MoviesComponent
+			MovieByIdComponent
+			CreateMovieComponent
+				once movie is created, goto movies page
+			
+			
+			
+			

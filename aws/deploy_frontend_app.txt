@@ -1,0 +1,6 @@
+EC2 -> NGINX
+    any server -> tomcat, php, nodejs, .net,
+
+S3 -> deploy
+
+CloudFront -> 

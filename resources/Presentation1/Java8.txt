@@ -1,0 +1,58 @@
+Consider below classes:
+	Item
+		int id
+		String name
+		double price
+		String category
+	
+	Order
+		int id
+		String status
+		LocalDate orderDate
+		LocalDate deliveryDate
+		List<Item> items
+		Customer cus
+	
+	Customer
+		int id
+		String name
+		String gender
+		String city
+		
+		
+Consider below objects:
+Items
+	id, item, price, category
+	134, Moto24, 15000, Mobiles
+	157, Spiderman, 50, Books
+	204, Acer, 70000, Laptops
+	210, iPhone, 45000, Mobiles
+	215, Shirt, 1500, Shirts
+	
+Customer
+	id, name, gender, city
+	1, Tom, male, Bangalore
+	2, Mike, male, Delhi
+	3, Miley, female, Pune
+	4, Kunal, male, Delhi
+	5, Sakshi, female, Delhi
+	
+Orders
+	id, status, order-date, delivery date, items, customer
+	1, delivered, 12-Nov-2021, 14-Nov-2021, (134,204), 1
+	2, delivered, 19-May-2022, 24-May-2022, (204), 4
+	3, delivered, 31-Jul-2021, 04-Aug-2021, (210, 215), 2
+	4, pending, 29-Oct-2022, -, (134, 157, 204, 215), 3
+	5, pending, 30-Oct-2021, -, (134), 5
+	
+	
+
+Solve below problems using java 8 lambda and stream api
+1: Obtain a list of items belongs to category “Mobiles”
+2: Obtain a list of items belongs to category “Mobiles” and price is greater than 20000
+3: Obtain a list of order with items belong to category “Mobiles”
+4: Obtain a list of items with category “Laptops” and then apply 5% discount
+5: Obtain a list of items ordered by customers who are female 
+6: Obtain a list of items ordered by customers between 01-Jan-2022 and 31-Oct-2022
+
+

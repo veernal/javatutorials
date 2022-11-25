@@ -1,0 +1,3 @@
+HTML5
+Create an mp3 player with 3 songs. 
+When user clicks on song text (title) play that song. 

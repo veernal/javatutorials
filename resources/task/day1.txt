@@ -1,0 +1,21 @@
+Create a list of names
+	Spiderman
+	Superman
+	Hulk
+	Antman
+	Ironman
+	Shaktiman
+	Hanuman
+	
+Do write code to find
+	1. find all names ending with "man" and print
+	2. find all names starting with "s" or "S" and print
+	3. Do print all names as uppercase
+	
+Do write code to find
+	find all names ending with "man" 
+	and then find all names starting with "s" or "S" 
+	and then Do print all names as uppercase
+	
+	
+	

@@ -1,0 +1,34 @@
+element vs tag
+
+block element vs inline element
+
+what is attribute
+
+-------------------
+container
+	div, header, aside, nav
+	span
+
+Text
+	h1, h2, h3, p
+	
+anchor
+	a
+	
+image
+	img
+	
+button
+	input type="button"
+	button
+	
+table
+	table
+	
+list
+	ul
+	ol
+	
+frame
+	iframe
+	

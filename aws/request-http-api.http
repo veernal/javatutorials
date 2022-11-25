@@ -1,0 +1,30 @@
+
+
+GET https://cnu1tcxkxb.execute-api.us-east-1.amazonaws.com/shows  
+
+###
+GET https://cnu1tcxkxb.execute-api.us-east-1.amazonaws.com/shows/2
+
+###
+
+POST https://cnu1tcxkxb.execute-api.us-east-1.amazonaws.com/shows  
+content-type: application/json
+
+{
+    "title": "Superman is back",
+    "director": "Clark",
+    "release": "2013-05-13",
+    "rating": 4.1
+  }
+
+###
+DELETE https://cnu1tcxkxb.execute-api.us-east-1.amazonaws.com/shows/2
+
+###
+
+GET http://35.171.6.212:8080/api/movies/rating?value=3.9
+
+###
+GET https://cnu1tcxkxb.execute-api.us-east-1.amazonaws.com/shows/ratings?value=4.2
+
+

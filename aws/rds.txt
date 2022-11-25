@@ -1,0 +1,21 @@
+
+ip, host, endpoint: mysql-ec2-app.chji9zusvvjq.us-east-1.rds.amazonaws.com
+username: admin
+password: CPDFXdk0MMIMSmpWIl8Y
+port: 3306
+
+
+
+
+
+spring.datasource.url=jdbc:mysql://mysql-ec2-app.chji9zusvvjq.us-east-1.rds.amazonaws.com:3306/demo?createDatabaseIfNotExist=true
+spring.datasource.username=admin
+spring.datasource.password=CPDFXdk0MMIMSmpWIl8Y
+
+
+
+
+mysql cli 
+workbench 
+
+application

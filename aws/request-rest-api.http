@@ -1,0 +1,31 @@
+GET http://35.171.6.212:8080/api/movies
+###
+
+GET https://0hdvejpkvl.execute-api.us-east-1.amazonaws.com/dev/cinemas  
+
+###
+GET https://0hdvejpkvl.execute-api.us-east-1.amazonaws.com/dev/cinemas/6
+
+###
+
+POST https://0hdvejpkvl.execute-api.us-east-1.amazonaws.com/dev/cinemas  
+content-type: application/json
+
+{
+    "title": "ABC",
+    "director": "XYZ",
+    "release": "2013-05-13",
+    "rating": 4.1
+  }
+
+###
+DELETE https://0hdvejpkvl.execute-api.us-east-1.amazonaws.com/dev/cinemas/2
+
+###
+
+GET https://0hdvejpkvl.execute-api.us-east-1.amazonaws.com/dev/cinemas/rating?value=3.9
+
+###
+GET https://0hdvejpkvl.execute-api.us-east-1.amazonaws.com/dev/cinemas/ratings?value=4.2
+
+

@@ -1,0 +1,32 @@
+http://es6-features.org/#Constants
+
+https://github.com/leonardomso/33-js-concepts
+
+
+
+Features:
+	var vs let vs const
+	Template literals
+	Arrow function
+	Spread operator
+	Rest parameter
+	Modules
+	Setters/Getters
+	
+	
+	Regular expressions
+		9898989898
+		09898989898
+		+919898989898
+		919898989898
+		+91 9898989898
+		91 9898989898
+		+91-9898989898
+		91-9898989898
+		
+		credit card
+			8989-9898-7878
+			8989 9898 7878
+			898998987878
+		
+	

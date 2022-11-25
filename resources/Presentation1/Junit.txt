@@ -1,0 +1,7 @@
+Create a calculator with divide method.
+
+Write test cases to test divide method with all the possible scenarios.
+	Ex:
+		Should div num by num
+		Should not div by zero
+		

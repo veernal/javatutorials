@@ -1,0 +1,82 @@
+instance types: https://aws.amazon.com/ec2/instance-types/?trk=32f4fbd0-ffda-4695-a60c-8857fab7d0dd&sc_channel=ps&s_kwcid=AL!4422!3!536392685920!e!!g!!aws%20ec2%20instance%20types&ef_id=EAIaIQobChMIlt2104_B-wIVQQ9yCh0wBwR5EAAYASABEgLMCPD_BwE:G:s&s_kwcid=AL!4422!3!536392685920!e!!g!!aws%20ec2%20instance%20types
+
+1. Create EC2 -> linux
+	allow users via security group - inbound rules
+		my machine for ssh and 22
+		anyone for http & https, 80 and 8080
+	make connection -> ssh @ec2-user:DNS
+
+		app ws/p17-
+
+2. Run springboot application
+- install java 11
+--- sudo amazon-linux-extras install java-openjdk11
+			--- sudo yum install java-1.8.0-openjdk
+
+3. Create link for jar
+	github/bitbucket to upload code - javacode.jar
+	onenote
+	s3 - aws service
+
+
+- download java jar
+-- wget link 
+- java -jar appname.jar
+
+
+
+4. Angular 
+
+
+	Need a server
+	- install nginx server
+		$ sudo yum install nginx
+		// amazon command
+    	$ sudo amazon-linux-extras install nginx1
+	default 
+	- port: 80
+	- location: /usr/share/nginx/html
+
+	$ sudo service nginx start
+	$ sudo service nginx stop 
+
+	build angular 
+		$ npm run build 
+		or 
+		$ ng build 
+
+	/angular-project/dist/angular-project/*
+
+	upload to s3 
+	download in ec2 
+	-- wget link 
+	-- unzip angular-project.zip
+
+
+
+		Copy from: 
+			/home/ec2-user/angular-project
+		To:
+			/usr/share/nginx/html
+
+		Delete old code:
+			$ sudo service nginx stop 
+			$ sudo cd /usr/share/nginx/html
+			$ sudo rm -rf *.*
+			$ sudo rm -rf icons
+			$ sudo service nginx start  
+
+
+	- copy and put to nginx default location
+		$ cp /home/ec2-user/angular-project/* /usr/share/nginx/html -r
+	
+	$ sudo service nginx start
+
+
+-------------------------------------
+
+How to Send Log Files to AWS CloudWatch
+https://www.rapidspike.com/blog/how-to-send-log-files-to-aws-cloudwatch-ubuntu/
+
+---
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartEC2Instance.html

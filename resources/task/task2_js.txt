@@ -1,0 +1,21 @@
+Write a music player application using html and javascript.
+
+	songList = "O Carol", "When you love someone", "I am adicted"
+
+Music player should:
+	Show all songs.
+	Add new song.
+	Sort songs.
+		ascending
+		descending
+	
+	Remove song.
+	
+	
+--------------------------------
+
+
+Write a clock:
+
+	HH:MM:SS
+	Day, date month year
