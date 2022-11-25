@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         span.error{
+            color: magenta
+        }
+            
+    </style>
+</head>
+<body>
+    <form onsubmit="getLogin(event)" action="?#" method="post">
+        <div>    
+            Username: <input id="uname" type="text" name="uname" placeholder="username" /><br/>
+            <span class="error" id="unameError"></span>
+        </div>
+        <div>
+            Password: <input id="pwd" type="text" name="pwd" placeholder="username" /><br/>
+            <span class="error" id="pwdError"></span>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="validation.js"></script>
+</body>
+</html>

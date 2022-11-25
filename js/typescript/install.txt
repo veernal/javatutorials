@@ -1,0 +1,57 @@
+https://www.executeprogram.com/courses/typescript-basics/articles/how-to-install-typescript#:~:text=How%20to%20install%20TypeScript%201%20Installing%20npm%20The,prompt%20...%206%20Using%20a%20TypeScript%20linter%20
+
+
+Install npm:
+    download and install nodejs
+        nodejs.org
+    to verify installation open cmd
+        $ node -v 
+        $ npm -v 
+        update npm: 
+        $ npm install -g npm@latest 
+
+
+Find package
+    npmjs.com
+
+
+    
+
+Install typescript as global
+    $ npm install -g typescript
+    or
+    $ npm i typescript -g
+
+
+    $ tsc --init 
+    $ tsc -p tsconfig.json 
+
+
+
+
+install typescript as local 
+    $ npm init 
+    $ npm i typescript 
+
+
+    $ tsc -v
+
+
+    $ ./node_modules/.bin/tsc --init 
+    $ ./node_modules/.bin/tsc -p tsconfig.json 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

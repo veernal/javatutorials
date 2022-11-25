@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <audio id="player" autoplay controls> -->
+        <audio id="player">
+            <source src="./assets/188.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio> 
+
+      <button id="play">Play</button>
+      <button id="pause">Pause</button>
+      <button id="stop">Stop</button>
+      <button id="volup">VolUp</button>
+      <button id="voldown">VolDown</button>
+
+      <script>
+          let audio = document.getElementById("player");
+
+          document.getElementById("play").addEventListener("click", function(){
+            console.log("play");
+            audio.play();
+        })
+        document.getElementById("pause").addEventListener("click", function(){
+            console.log("pause");
+            audio.pause();
+        })
+        document.getElementById("stop").addEventListener("click", function(){
+            console.log("stop");
+            audio.currentTime = 0;
+            audio.pause();
+        })
+        document.getElementById("volup").addEventListener("click", function(){
+            console.log("volup");
+            console.log(audio.volume)
+            if(audio.volume <= 0.9){
+                audio.volume += 0.1;
+            }
+        })
+        document.getElementById("voldown").addEventListener("click", function(){
+            console.log("voldown");
+            console.log(audio.volume)
+            if(audio.volume >= 0.1){
+                audio.volume -= 0.1;
+            }
+        })
+      </script>
+</body>
+</html>

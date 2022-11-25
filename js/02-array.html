@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo</title>
+</head>
+<body>
+
+    <input id="fi" placeholder="Enter fruit name" />
+    <button onclick="addNewFruit()">Add</button>
+
+    <h3>Demo</h3>
+    <ul></ul>
+    
+    <script>
+        let names = ["Mango", "Grape", "Banana", "pear"];
+        let list = document.getElementsByTagName("ul")[0];
+        names.forEach(f=>{
+            // let li = document.createElement("li");
+            // li.innerText=f;
+            // list.appendChild(li)
+            appendList(f)
+        })
+
+        function addNewFruit(){
+            console.log("adding new fruit");
+            let inputElement = document.getElementById("fi");
+            console.log(inputElement.value);
+            appendList(inputElement.value);
+            inputElement.value = "";
+        }
+
+
+        function appendList(fruitName){
+            if(!!fruitName){
+                let li = document.createElement("li");
+                li.innerText=fruitName;
+                list.appendChild(li)
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
+

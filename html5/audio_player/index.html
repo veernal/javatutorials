@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            cursor: pointer;
+        }
+        li:hover{
+            text-decoration: underline;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <audio controls id="player">
+        <source src="./assets/audiocutter.mp3" type="audio/mpeg">
+    </audio>
+
+    <ul>
+        <li class="mp3-title">audiocutter</li>
+        <li class="mp3-title" onclick="changeSong('har-har-shambhu')">har-har-shambhu</li>
+        <li class="mp3-title">mystory</li>
+    </ul>
+    <button onclick="changeSong('har-har-shambhu')">Change song</button>
+
+    <script>
+        function changeSong(song){
+            let audioPlayer = document.getElementById("player");
+            audioPlayer.src="./assets/"+song+".mp3";
+            audioPlayer.play();
+        }
+
+
+        // let titleElements = document.getElementsByClassName("mp3-title")
+        
+        // console.log(titleElements[0]);
+        // for(let i=0;i<titleElements.length;i++){
+
+        //     titleElements[i].addEventListener("click", function(){
+        //         changeSong(titleElements[i].innerText)
+        //     })
+
+        // };
+
+    </script>
+</body>
+</html>
