@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "fae0b628-8988-45e6-a79e-1015c93c946a",
+		"name": "READER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24325483"
+	},
+	"item": [
+		{
+			"name": "subscribe_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\":3,\r\n    \"readerDto\":{\r\n        \"readerId\":1,\r\n        \"name\":\"veernal\",\r\n        \"emailId\":\"veernal@org.com\"\r\n     }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/readers/books/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"readers",
+						"books",
+						"subscribe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_subscribed_book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/readers/veernal@org.com/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"readers",
+						"veernal@org.com",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unsubscribe/cancel_book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookId\":3,\r\n    \"readerDto\":{\r\n        \"readerId\":1,\r\n        \"name\":\"veernal\",\r\n        \"emailId\":\"veernal@org.com\"\r\n     }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/readers/veernal@org.com/books/1/cancel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"readers",
+						"veernal@org.com",
+						"books",
+						"1",
+						"cancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_Invoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/readers/veernal@org.com/books/find/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"readers",
+						"veernal@org.com",
+						"books",
+						"find",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/readers/veernal@org.com/notification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"readers",
+						"veernal@org.com",
+						"notification"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

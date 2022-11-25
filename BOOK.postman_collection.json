@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "b16b6333-d373-4653-83ef-e66a260b1bf8",
+		"name": "BOOK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24325483"
+	},
+	"item": [
+		{
+			"name": "Create_Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookDtoList\":[\r\n        {\r\n            \"bookId\": 2,\r\n            \"logo\" : \"arihant\",\r\n            \"title\":\"JEE\",\r\n            \"category\":\"competitive_exams\",\r\n            \"price\":500,\r\n            \"authorId\":\"1\",\r\n            \"author\":\"pandey\",\r\n            \"publisher\":\"arihant\",\r\n            \"publisherDate\":\"2022-07-2016\",\r\n            \"active\":true,\r\n            \"content\":\"JEE Objective series\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/books/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"books",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/books/search?category=kids&title=stories&price=700&publisher=pearson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"books",
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "kids"
+						},
+						{
+							"key": "title",
+							"value": "stories"
+						},
+						{
+							"key": "price",
+							"value": "700"
+						},
+						{
+							"key": "publisher",
+							"value": "pearson"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

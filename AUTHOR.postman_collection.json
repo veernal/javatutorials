@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "c8f24c34-c636-42a8-8948-b594396f7df0",
+		"name": "AUTHOR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24325483"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"veernal\",\r\n    \"password\":\"veernal@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/author/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"author",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "author_get_books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2ZWVybmFsIiwiZXhwIjoxNjY4MTQzNzU5LCJpYXQiOjE2NjgxNDMxNTl9.L5KXsbPKx_DttDzoXemuKm20Vy1xNAds8aJmSOwzgx6pSzoYKvkG9r-csQCnA_wABBonclLULlSR3t2Pkg3kgw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/author/veernal/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"author",
+						"veernal",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "author_create_book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2ZWVybmFsIiwiZXhwIjoxNjY5MDE2OTQyLCJpYXQiOjE2NjkwMTYzNDJ9.D-fWZOCjodW1oBsPGcdrI-mHSgaJO1Eo8TiEM3xRnYKBYnzu0M1US-Bo9wQkJO7c52TscR7Rx34jyVH_vHYqbA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"authorId\":1,\r\n    \"name\":\"veernal\",\r\n    \"bookDtoList\": [\r\n        {\r\n            \"bookId\": 3,\r\n            \"logo\": \"pearson\",\r\n            \"title\": \"bed_time_stories\",\r\n            \"category\": \"kids\",\r\n            \"price\": 500.0,\r\n            \"authorId\": 1,\r\n            \"author\": \"veernal\",\r\n            \"publisher\": \"pearson\",\r\n            \"publishedDate\": \"2022-03-12\",\r\n            \"active\": true,\r\n            \"content\": \"kids stories\"\r\n        }\r\n\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/author/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"author",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"veernal\",\r\n    \"password\":\"veernal@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/author/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"author",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit_book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2ZWVybmFsIiwiZXhwIjoxNjY4MTQzNzU5LCJpYXQiOjE2NjgxNDMxNTl9.L5KXsbPKx_DttDzoXemuKm20Vy1xNAds8aJmSOwzgx6pSzoYKvkG9r-csQCnA_wABBonclLULlSR3t2Pkg3kgw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"authorId\": 1,\r\n    \"name\": \"veernal\",\r\n    \"bookDtoList\": [\r\n        {\r\n            \"bookId\": 1,\r\n            \"logo\": \"pearson\",\r\n            \"title\": \"stories\",\r\n            \"category\": \"kids\",\r\n            \"price\": 800.0,\r\n            \"authorId\": 1,\r\n            \"author\": \"veernal\",\r\n            \"publisher\": \"pearson\",\r\n            \"publishedDate\": \"2022-03-12\",\r\n            \"active\": false,\r\n            \"content\": \"kids stories\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/api/v1/digitalbooks/author/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"api",
+						"v1",
+						"digitalbooks",
+						"author",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
