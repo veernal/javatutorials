@@ -1,0 +1,59 @@
+<h3>Subscriptions</h3>
+<div class="container">
+<form [formGroup]="emailForm">
+    
+    Enter your Email ID: <input 
+                #emailId
+                formControlName="emailId"
+                type="text"
+                placeholder="Enter Email" />
+               
+    
+    <input 
+        type="button"
+        value="Get Subscriptions"
+        (click)="getSubscriptions(emailId.value)"
+        [disabled]="emailForm.invalid" />
+    
+</form>
+</div>
+
+<br>
+
+<table id = "books" border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Logo</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Publisher</th>
+            <th>Published Date</th>
+            <th>Price</th>
+            <th>Read</th>
+            <th>Cancel</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bookDto of readerPayload.bookDtoList;let i=index">
+            <td>{{bookDto.bookId}}</td>
+            <td>{{bookDto.logo}}</td>
+            <td>{{bookDto.title}}</td>
+            <td>{{bookDto.author}}</td>
+            <td>{{bookDto.category}}</td>
+            <td>{{bookDto.publisher}}</td>
+            <td>{{bookDto.publishedDate}}</td>
+            <td>{{bookDto.price}}</td>
+            <td><input 
+                type="button"
+                value="Read"
+                (click)="readBook(bookDto,emailId.value)"/></td>
+                 
+            <td><input 
+                type="button"
+                value="Cancel Subscription"
+                (click)="cancelBook(bookDto,emailId.value)"/></td>
+        </tr>
+    </tbody>
+</table>

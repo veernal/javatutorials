@@ -1,0 +1,38 @@
+<h3>Find Your Payment Invoice</h3>
+<div class="container">
+<form [formGroup]="invoiceForm">
+
+
+    Enter Subscription ID: <input 
+                     #subscriptionId
+                     formControlName="subscriptionId"
+                     type="number"
+                     placeholder="Enter Subscription ID" />
+                     <br/>
+    
+    Enter your Email ID: <input 
+                          #emailId
+                          formControlName="emailId"
+                          type="text"
+                          placeholder="Enter Email" />
+                          <br/>
+    
+    <input 
+        type="button"
+        value="Search Invoice"
+        (click)="findInvoice(subscriptionId.value,emailId.value)"
+        [disabled]="invoiceForm.invalid" />
+    
+</form>
+
+<br/>
+
+<h4 *ngIf="invoiceGenerated">Payment Invoice Found !</h4>
+
+<br/>
+<input 
+*ngIf="invoiceGenerated"
+type="button"
+value="View Invoice"
+(click)="viewInvoice(paymentInvoiceHtml)"/>
+</div>
